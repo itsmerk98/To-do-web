@@ -8,62 +8,70 @@
     <link rel="stylesheet" href="style.css">
     <title>To Do List.</title>
 </head>
-<body>
-    <div class="upper-container">
-        <div class="upper-container1">
-            <span id="tasks">Tasks</span>
-            <span id="lists">Lists</span>
+<body oncontextmenu="return true">
+    <div class="notshow">
+        <div class="upper-container">
+            <div class="upper-container1">
+                <span id="tasks">Tasks</span>
+                <span id="lists">Lists</span>
+            </div>
+            <div class="upper-container2">
+                <span id="circle"></span>
+                <i class="fa fa-plus-circle" style="font-size:40px;color:red"></i>
+                <span id="addlist">Add List</span>
+            </div>
         </div>
-        <div class="upper-container2">
-            <span id="circle"></span>
-            <i class="fa fa-plus-circle" style="font-size:40px;color:red"></i>
-            <span id="addlist">Add List</span>
+        <div class="card-container">
+            <div class="card1">
+                <div class="div1">
+                    <p>Trip To Paris </p>
+                </div>
+                <div class="div2">
+                    <p>Completed task</p>
+                </div>
+                <div class="div3">
+                    <form action="#">
+                        <input type="checkbox" name="todo" id="check1">
+                        <label for="check1">Pending task </label>
+                    </form>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="div1">
+                    <p>Trip To Paris </p>
+                </div>
+                <div class="div2">
+                    <p>Completed task</p>
+                </div>
+                <div class="div3">
+                    <form action="#">
+                        <input type="checkbox" name="todo" id="check2">
+                        <label for="check2">Pending task </label>
+                    </form>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="div1">
+                    <p>Trip To Paris </p>
+                </div>
+                <div class="div2">
+                    <p>Completed task</p>
+                </div>
+                <div class="div3">
+                    <form action="#">
+                        <input type="checkbox" name="todo" id="check3">
+                        <label for="check3">Pending task </label>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="card-container">
-        <div class="card1">
-            <div class="div1">
-                <p>Trip To Paris </p>
-            </div>
-            <div class="div2">
-                <p>Completed task</p>
-            </div>
-            <div class="div3">
-                <form action="#">
-                    <input type="checkbox" name="todo" id="check">
-                    <label for="check">Pending task </label>
-                </form>
-            </div>
-        </div>
-        <div class="card1">
-            <div class="div1">
-                <p>Trip To Paris </p>
-            </div>
-            <div class="div2">
-                <p>Completed task</p>
-            </div>
-            <div class="div3">
-                <form action="#">
-                    <input type="checkbox" name="todo" id="check">
-                    <label for="check">Pending task </label>
-                </form>
-            </div>
-        </div>
-        <div class="card1">
-            <div class="div1">
-                <p>Trip To Paris </p>
-            </div>
-            <div class="div2">
-                <p>Completed task</p>
-            </div>
-            <div class="div3">
-                <form action="#">
-                    <input type="checkbox" name="todo" id="check">
-                    <label for="check">Pending task </label>
-                </form>
-            </div>
-        </div>
+    <div class="pop-up">
+        <center>
+            <p id="add-new"> Add New List </p>
+        </center>
+        <center><textarea id="pop-upbar" cols="40"></textarea></center>
+        <center><button class="pop-up-button">ADD </button></center>
     </div>
-    
 </body>
 </html>
